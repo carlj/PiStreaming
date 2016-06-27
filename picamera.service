@@ -1,0 +1,10 @@
+[Unit]
+Description=picamera
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/home/pi/picamera/pistreaming/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
